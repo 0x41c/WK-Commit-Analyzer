@@ -1,4 +1,4 @@
-# Webkit Commit Analyzer
+# WebKit Commit Analyzer
 
 This project is a simple commit checker that looks for bug IDs in the webkit commit messages. After finding them, it will look them up on <https://bugs.webkit.org> and determine the access level for the bug. Bugs that we don't have access to have security implications which are exactly what we're looking for.
 
