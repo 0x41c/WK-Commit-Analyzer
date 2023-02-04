@@ -1,0 +1,17 @@
+{
+  "name": "wk-commit-analyzer",
+  "version": "1.0.0",
+  "description": "Traverses WebKit commits to find priveledged commits",
+  "main": "src/index.js",
+  "type": "module",
+  "author": "Corban Amouzou",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@octokit/rest": "^19.0.5",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.0",
+    "persistent-cache": "^1.1.2"
+  }
+}

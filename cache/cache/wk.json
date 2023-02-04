@@ -1,0 +1,2378 @@
+{
+  "data": {
+    "head": "ff75ee6b051e33feb8b8424647945cbb0151280b",
+    "tail": "e7a763ba3abd9f265af5c63531dd69a451937085",
+    "security_patches": [
+      {
+        "sha": "337643e041254c335378ea80f73cb1d5aac1dc77",
+        "node_id": "C_kwDOExyGPdoAKDMzNzY0M2UwNDEyNTRjMzM1Mzc4ZWE4MGY3M2NiMWQ1YWFjMWRjNzc",
+        "commit": {
+          "author": {
+            "name": "Ryosuke Niwa",
+            "email": "rniwa@webkit.org",
+            "date": "2023-01-26T22:05:42Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T22:05:42Z"
+          },
+          "message": "Cherry-pick 252432.1015@safari-7614-branch (3be45019e7fd). rdar://104668509\n\n    Crash in HTMLInputElement::dataListMayHaveChanged via ListAttributeTargetObserver::idTargetChanged\n    https://bugs.webkit.org/show_bug.cgi?id=250039\n    rdar://103823004\n\n    Reviewed by Wenson Hsieh, Geoffrey Garen and Aditya Keerthi.\n\n    Merge https://commits.webkit.org/253773@main to avoid hitting this crash.\n\n    * LayoutTests/fast/forms/datalist/datalist-id-change-crash-expected.txt: Added.\n    * LayoutTests/fast/forms/datalist/datalist-id-change-crash.html: Added.\n    * Source/WebCore/html/HTMLInputElement.cpp:\n    (WebCore::HTMLInputElement::resetListAttributeTargetObserver):\n    (WebCore::ListAttributeTargetObserver::ListAttributeTargetObserver):\n\n    Canonical link: https://commits.webkit.org/252432.1015@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259454@main",
+          "tree": {
+            "sha": "246aed6a97a9b1dbc3c1e176ca4713350891bd25",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/246aed6a97a9b1dbc3c1e176ca4713350891bd25"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/337643e041254c335378ea80f73cb1d5aac1dc77",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/337643e041254c335378ea80f73cb1d5aac1dc77",
+        "html_url": "https://github.com/WebKit/WebKit/commit/337643e041254c335378ea80f73cb1d5aac1dc77",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/337643e041254c335378ea80f73cb1d5aac1dc77/comments",
+        "author": {
+          "login": "rniwa",
+          "id": 285965,
+          "node_id": "MDQ6VXNlcjI4NTk2NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/285965?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rniwa",
+          "html_url": "https://github.com/rniwa",
+          "followers_url": "https://api.github.com/users/rniwa/followers",
+          "following_url": "https://api.github.com/users/rniwa/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rniwa/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rniwa/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rniwa/subscriptions",
+          "organizations_url": "https://api.github.com/users/rniwa/orgs",
+          "repos_url": "https://api.github.com/users/rniwa/repos",
+          "events_url": "https://api.github.com/users/rniwa/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rniwa/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "020e4ca50944304fb1fb99315e8449f7b37f1a50",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/020e4ca50944304fb1fb99315e8449f7b37f1a50",
+            "html_url": "https://github.com/WebKit/WebKit/commit/020e4ca50944304fb1fb99315e8449f7b37f1a50"
+          }
+        ]
+      },
+      {
+        "sha": "b5fe944862632c834056aba49b3cccc5ca10509a",
+        "node_id": "C_kwDOExyGPdoAKGI1ZmU5NDQ4NjI2MzJjODM0MDU2YWJhNDliM2NjY2M1Y2ExMDUwOWE",
+        "commit": {
+          "author": {
+            "name": "Nikolaos Mouchtaris",
+            "email": "nmouchtaris@apple.com",
+            "date": "2023-01-26T20:00:42Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T20:00:42Z"
+          },
+          "message": "Cherry-pick 252432.947@safari-7614-branch (2d531cf29dfa). rdar://104657691\n\n    jsc_fuz/wktr: heap-use-after-free in WebCore::ScrollableArea::existingScrollAnimator() const ScrollableArea.h:188\n    https://bugs.webkit.org/show_bug.cgi?id=249242\n    <rdar://103294792>\n\n    Reviewed by Simon Fraser and Ryan Haddad.\n\n    Remove scrollable area from m_scrollableAreasForAnimatedScroll\n    if scrollable area will be destroyed.\n\n    * LayoutTests/fast/scrolling/mac/smooth-scroll-crash-expected.txt: Added.\n    * LayoutTests/fast/scrolling/mac/smooth-scroll-crash.html: Added.\n    * Source/WebCore/rendering/RenderLayerScrollableArea.cpp:\n    (WebCore::RenderLayerScrollableArea::clear):\n\n    Canonical link: https://commits.webkit.org/252432.947@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259448@main",
+          "tree": {
+            "sha": "d3c0da69a49f49f707ae21af76c7efa403d3bee5",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/d3c0da69a49f49f707ae21af76c7efa403d3bee5"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/b5fe944862632c834056aba49b3cccc5ca10509a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/b5fe944862632c834056aba49b3cccc5ca10509a",
+        "html_url": "https://github.com/WebKit/WebKit/commit/b5fe944862632c834056aba49b3cccc5ca10509a",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/b5fe944862632c834056aba49b3cccc5ca10509a/comments",
+        "author": {
+          "login": "nmoucht",
+          "id": 20847176,
+          "node_id": "MDQ6VXNlcjIwODQ3MTc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/20847176?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nmoucht",
+          "html_url": "https://github.com/nmoucht",
+          "followers_url": "https://api.github.com/users/nmoucht/followers",
+          "following_url": "https://api.github.com/users/nmoucht/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nmoucht/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nmoucht/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nmoucht/subscriptions",
+          "organizations_url": "https://api.github.com/users/nmoucht/orgs",
+          "repos_url": "https://api.github.com/users/nmoucht/repos",
+          "events_url": "https://api.github.com/users/nmoucht/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nmoucht/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0c7c5a3dd3e4d47af22fbe7cc8b2ad2fbf10ed98",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/0c7c5a3dd3e4d47af22fbe7cc8b2ad2fbf10ed98",
+            "html_url": "https://github.com/WebKit/WebKit/commit/0c7c5a3dd3e4d47af22fbe7cc8b2ad2fbf10ed98"
+          }
+        ]
+      },
+      {
+        "sha": "2caba6db920732740468c72d2decc5c3e3adba7b",
+        "node_id": "C_kwDOExyGPdoAKDJjYWJhNmRiOTIwNzMyNzQwNDY4YzcyZDJkZWNjNWMzZTNhZGJhN2I",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-26T19:46:32Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T19:46:32Z"
+          },
+          "message": "Cherry-pick 252432.945@safari-7614-branch (f8d24d4f0141). rdar://104657147\n\n    Protect against RemoteLayerTreeDrawingAreaProxy getting destroyed during waitForAndDispatchImmediately() call\n    https://bugs.webkit.org/show_bug.cgi?id=248660\n    rdar://101806758\n\n    Reviewed by Wenson Hsieh and Ryan Haddad.\n\n    In RemoteLayerTreeDrawingAreaProxy::waitForDidUpdateActivityState(), during the execution of\n    IPC::Connection::waitForAndDispatchImmediately(), `this` might get destroyed as a result of\n    processing an incoming IPC from the WebProcess. For this reason, we need to check that `this`\n    is still alive after the call returns.\n\n    Note that we cannot easily protect `this` since this is not a RefCounted object.\n\n    * Source/WebKit/UIProcess/RemoteLayerTree/RemoteLayerTreeDrawingAreaProxy.mm:\n    (WebKit::RemoteLayerTreeDrawingAreaProxy::waitForDidUpdateActivityState):\n\n    Canonical link: https://commits.webkit.org/252432.945@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259445@main",
+          "tree": {
+            "sha": "e1752d0c877896b29beab19a064ea1386f10bfda",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/e1752d0c877896b29beab19a064ea1386f10bfda"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/2caba6db920732740468c72d2decc5c3e3adba7b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/2caba6db920732740468c72d2decc5c3e3adba7b",
+        "html_url": "https://github.com/WebKit/WebKit/commit/2caba6db920732740468c72d2decc5c3e3adba7b",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/2caba6db920732740468c72d2decc5c3e3adba7b/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8d25b5db45ad6eef27e2f2d3dae7f3a80f5204c5",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/8d25b5db45ad6eef27e2f2d3dae7f3a80f5204c5",
+            "html_url": "https://github.com/WebKit/WebKit/commit/8d25b5db45ad6eef27e2f2d3dae7f3a80f5204c5"
+          }
+        ]
+      },
+      {
+        "sha": "1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+        "node_id": "C_kwDOExyGPdoAKDFiZjFiNTg0NGRmY2YwMmRiNWFlMzc4YWVkZjI3NDE0NmNlZjRjNWE",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-26T18:53:47Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T18:53:47Z"
+          },
+          "message": "Cherry-pick 252432.944@safari-7614-branch (50b1632f78ae). rdar://104656472\n\n    Tweak back/forward list hijacking prevention logic\n    https://bugs.webkit.org/show_bug.cgi?id=248716\n    rdar://102923240\n\n    Reviewed by Geoffrey Garen and Ryan Haddad.\n\n    Tweak back/forward list hijacking prevention logic for better protection and to\n    align our behavior with Chrome.\n\n    In particular, let's consider this example:\n    Yahoo -> Yahoo#a (no userInteraction) -> Google -> Google#a (no user interaction) -> Google#b (no user interaction)\n\n    If we're currently on Google#b and navigate backwards:\n    - Old behavior: We load Google\n    - New behavior: We load Yahoo#a\n    The new behavior makes sense since the user feels like they are on Google\n    (since Google#a & Google#b happened without user interaction) and the last\n    page they viewed before Google was Yahoo#b.\n\n    If we're on Yahoo#a and navigate forwards:\n    - Old behavior: We load Google\n    - New behavior: We load Google#b\n    The new behavior makes sense as a symmetry to the case above.\n\n    Now let's consider this example:\n    Yahoo -> Yahoo#a (no userInteraction) -> Google\n\n    If we're on Google and navigate backwards:\n    - Old behavior: we load Yahoo\n    - New behavior: We load Yahoo#a\n\n    Finally, with this example:\n    Yahoo -> Google -> Google#a (no user interaction) -> Google#b (no user interaction)\n\n    If we're on Yahoo and navigate forwards:\n    - Old behavior: We load Google\n    - New behavior: We load Google#b\n\n    This patch also changes the behavior of the popstate event. We used to fire the\n    popstate event for navigations that were not within the same document. However,\n    this behavior wasn't aligned with the specification [1] or with other browsers.\n    The exploit attached to the radar was also relying on this event to hijack the\n    back/forward navigation and lock the user on a specific site.\n    I updated our code so that the popstate is now only fired for same-document\n    navigations and I updated our tests accordingly. I have verified that our\n    behavior is consistent with Blink on these new test versions.\n\n    * LayoutTests/fast/loader/stateobjects/document-destroyed-navigate-back-expected.txt:\n    * LayoutTests/fast/loader/stateobjects/document-destroyed-navigate-back-with-fragment-scroll-expected.txt:\n    * LayoutTests/fast/loader/stateobjects/document-destroyed-navigate-back.html:\n    * LayoutTests/fast/loader/stateobjects/popstate-does-not-fire-with-page-cache-expected.txt: Renamed from LayoutTests/fast/loader/stateobjects/popstate-fires-with-page-cache-expected.txt.\n    * LayoutTests/fast/loader/stateobjects/popstate-does-not-fire-with-page-cache.html: Renamed from LayoutTests/fast/loader/stateobjects/popstate-fires-with-page-cache.html.\n    * LayoutTests/fast/loader/stateobjects/replacestate-in-iframe-expected.txt:\n    * LayoutTests/fast/loader/stateobjects/resources/popstate-does-not-fire-with-page-cache-1.html: Renamed from LayoutTests/fast/loader/stateobjects/resources/popstate-fires-with-page-cache-1.html.\n    * LayoutTests/fast/loader/stateobjects/resources/popstate-does-not-fire-with-page-cache-2.html: Added.\n    * LayoutTests/fast/loader/stateobjects/resources/popstate-fires-with-page-cache-2.html: Removed.\n    * LayoutTests/fast/loader/stateobjects/resources/replacestate-in-iframe-window-child.html:\n    * Source/WebCore/history/CachedPage.cpp:\n    (WebCore::firePageShowEvent):\n    (WebCore::CachedPage::restore):\n    (WebCore::firePageShowAndPopStateEvents): Deleted.\n    * Source/WebCore/loader/FrameLoader.cpp:\n    (WebCore::FrameLoader::didBeginDocument):\n    (WebCore::FrameLoader::transitionToCommitted):\n    * Source/WebCore/loader/FrameLoader.h:\n    * Source/WebKit/UIProcess/WebBackForwardList.cpp:\n    (WebKit::itemSkippingBackForwardItemsAddedByJSWithoutUserGesture):\n    * Tools/TestWebKitAPI/Tests/WebKit/WKBackForwardList.mm:\n    (runBackForwardNavigationSkipsItemsWithoutUserGestureTest):\n    (TEST):\n    (runBackForwardNavigationDoesNotSkipItemsWithUserGestureTest):\n\n    Canonical link: https://commits.webkit.org/252432.944@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259437@main",
+          "tree": {
+            "sha": "8836938e92b7cfba9e661255239d375d78cbd657",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/8836938e92b7cfba9e661255239d375d78cbd657"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+        "html_url": "https://github.com/WebKit/WebKit/commit/1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/1bf1b5844dfcf02db5ae378aedf274146cef4c5a/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3d28c4a219c3e18c2439f9d8f474b8704c836b94",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/3d28c4a219c3e18c2439f9d8f474b8704c836b94",
+            "html_url": "https://github.com/WebKit/WebKit/commit/3d28c4a219c3e18c2439f9d8f474b8704c836b94"
+          }
+        ]
+      },
+      {
+        "sha": "337643e041254c335378ea80f73cb1d5aac1dc77",
+        "node_id": "C_kwDOExyGPdoAKDMzNzY0M2UwNDEyNTRjMzM1Mzc4ZWE4MGY3M2NiMWQ1YWFjMWRjNzc",
+        "commit": {
+          "author": {
+            "name": "Ryosuke Niwa",
+            "email": "rniwa@webkit.org",
+            "date": "2023-01-26T22:05:42Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T22:05:42Z"
+          },
+          "message": "Cherry-pick 252432.1015@safari-7614-branch (3be45019e7fd). rdar://104668509\n\n    Crash in HTMLInputElement::dataListMayHaveChanged via ListAttributeTargetObserver::idTargetChanged\n    https://bugs.webkit.org/show_bug.cgi?id=250039\n    rdar://103823004\n\n    Reviewed by Wenson Hsieh, Geoffrey Garen and Aditya Keerthi.\n\n    Merge https://commits.webkit.org/253773@main to avoid hitting this crash.\n\n    * LayoutTests/fast/forms/datalist/datalist-id-change-crash-expected.txt: Added.\n    * LayoutTests/fast/forms/datalist/datalist-id-change-crash.html: Added.\n    * Source/WebCore/html/HTMLInputElement.cpp:\n    (WebCore::HTMLInputElement::resetListAttributeTargetObserver):\n    (WebCore::ListAttributeTargetObserver::ListAttributeTargetObserver):\n\n    Canonical link: https://commits.webkit.org/252432.1015@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259454@main",
+          "tree": {
+            "sha": "246aed6a97a9b1dbc3c1e176ca4713350891bd25",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/246aed6a97a9b1dbc3c1e176ca4713350891bd25"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/337643e041254c335378ea80f73cb1d5aac1dc77",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/337643e041254c335378ea80f73cb1d5aac1dc77",
+        "html_url": "https://github.com/WebKit/WebKit/commit/337643e041254c335378ea80f73cb1d5aac1dc77",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/337643e041254c335378ea80f73cb1d5aac1dc77/comments",
+        "author": {
+          "login": "rniwa",
+          "id": 285965,
+          "node_id": "MDQ6VXNlcjI4NTk2NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/285965?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rniwa",
+          "html_url": "https://github.com/rniwa",
+          "followers_url": "https://api.github.com/users/rniwa/followers",
+          "following_url": "https://api.github.com/users/rniwa/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rniwa/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rniwa/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rniwa/subscriptions",
+          "organizations_url": "https://api.github.com/users/rniwa/orgs",
+          "repos_url": "https://api.github.com/users/rniwa/repos",
+          "events_url": "https://api.github.com/users/rniwa/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rniwa/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "020e4ca50944304fb1fb99315e8449f7b37f1a50",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/020e4ca50944304fb1fb99315e8449f7b37f1a50",
+            "html_url": "https://github.com/WebKit/WebKit/commit/020e4ca50944304fb1fb99315e8449f7b37f1a50"
+          }
+        ]
+      },
+      {
+        "sha": "b5fe944862632c834056aba49b3cccc5ca10509a",
+        "node_id": "C_kwDOExyGPdoAKGI1ZmU5NDQ4NjI2MzJjODM0MDU2YWJhNDliM2NjY2M1Y2ExMDUwOWE",
+        "commit": {
+          "author": {
+            "name": "Nikolaos Mouchtaris",
+            "email": "nmouchtaris@apple.com",
+            "date": "2023-01-26T20:00:42Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T20:00:42Z"
+          },
+          "message": "Cherry-pick 252432.947@safari-7614-branch (2d531cf29dfa). rdar://104657691\n\n    jsc_fuz/wktr: heap-use-after-free in WebCore::ScrollableArea::existingScrollAnimator() const ScrollableArea.h:188\n    https://bugs.webkit.org/show_bug.cgi?id=249242\n    <rdar://103294792>\n\n    Reviewed by Simon Fraser and Ryan Haddad.\n\n    Remove scrollable area from m_scrollableAreasForAnimatedScroll\n    if scrollable area will be destroyed.\n\n    * LayoutTests/fast/scrolling/mac/smooth-scroll-crash-expected.txt: Added.\n    * LayoutTests/fast/scrolling/mac/smooth-scroll-crash.html: Added.\n    * Source/WebCore/rendering/RenderLayerScrollableArea.cpp:\n    (WebCore::RenderLayerScrollableArea::clear):\n\n    Canonical link: https://commits.webkit.org/252432.947@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259448@main",
+          "tree": {
+            "sha": "d3c0da69a49f49f707ae21af76c7efa403d3bee5",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/d3c0da69a49f49f707ae21af76c7efa403d3bee5"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/b5fe944862632c834056aba49b3cccc5ca10509a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/b5fe944862632c834056aba49b3cccc5ca10509a",
+        "html_url": "https://github.com/WebKit/WebKit/commit/b5fe944862632c834056aba49b3cccc5ca10509a",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/b5fe944862632c834056aba49b3cccc5ca10509a/comments",
+        "author": {
+          "login": "nmoucht",
+          "id": 20847176,
+          "node_id": "MDQ6VXNlcjIwODQ3MTc2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/20847176?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nmoucht",
+          "html_url": "https://github.com/nmoucht",
+          "followers_url": "https://api.github.com/users/nmoucht/followers",
+          "following_url": "https://api.github.com/users/nmoucht/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nmoucht/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nmoucht/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nmoucht/subscriptions",
+          "organizations_url": "https://api.github.com/users/nmoucht/orgs",
+          "repos_url": "https://api.github.com/users/nmoucht/repos",
+          "events_url": "https://api.github.com/users/nmoucht/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nmoucht/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0c7c5a3dd3e4d47af22fbe7cc8b2ad2fbf10ed98",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/0c7c5a3dd3e4d47af22fbe7cc8b2ad2fbf10ed98",
+            "html_url": "https://github.com/WebKit/WebKit/commit/0c7c5a3dd3e4d47af22fbe7cc8b2ad2fbf10ed98"
+          }
+        ]
+      },
+      {
+        "sha": "2caba6db920732740468c72d2decc5c3e3adba7b",
+        "node_id": "C_kwDOExyGPdoAKDJjYWJhNmRiOTIwNzMyNzQwNDY4YzcyZDJkZWNjNWMzZTNhZGJhN2I",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-26T19:46:32Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T19:46:32Z"
+          },
+          "message": "Cherry-pick 252432.945@safari-7614-branch (f8d24d4f0141). rdar://104657147\n\n    Protect against RemoteLayerTreeDrawingAreaProxy getting destroyed during waitForAndDispatchImmediately() call\n    https://bugs.webkit.org/show_bug.cgi?id=248660\n    rdar://101806758\n\n    Reviewed by Wenson Hsieh and Ryan Haddad.\n\n    In RemoteLayerTreeDrawingAreaProxy::waitForDidUpdateActivityState(), during the execution of\n    IPC::Connection::waitForAndDispatchImmediately(), `this` might get destroyed as a result of\n    processing an incoming IPC from the WebProcess. For this reason, we need to check that `this`\n    is still alive after the call returns.\n\n    Note that we cannot easily protect `this` since this is not a RefCounted object.\n\n    * Source/WebKit/UIProcess/RemoteLayerTree/RemoteLayerTreeDrawingAreaProxy.mm:\n    (WebKit::RemoteLayerTreeDrawingAreaProxy::waitForDidUpdateActivityState):\n\n    Canonical link: https://commits.webkit.org/252432.945@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259445@main",
+          "tree": {
+            "sha": "e1752d0c877896b29beab19a064ea1386f10bfda",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/e1752d0c877896b29beab19a064ea1386f10bfda"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/2caba6db920732740468c72d2decc5c3e3adba7b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/2caba6db920732740468c72d2decc5c3e3adba7b",
+        "html_url": "https://github.com/WebKit/WebKit/commit/2caba6db920732740468c72d2decc5c3e3adba7b",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/2caba6db920732740468c72d2decc5c3e3adba7b/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8d25b5db45ad6eef27e2f2d3dae7f3a80f5204c5",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/8d25b5db45ad6eef27e2f2d3dae7f3a80f5204c5",
+            "html_url": "https://github.com/WebKit/WebKit/commit/8d25b5db45ad6eef27e2f2d3dae7f3a80f5204c5"
+          }
+        ]
+      },
+      {
+        "sha": "1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+        "node_id": "C_kwDOExyGPdoAKDFiZjFiNTg0NGRmY2YwMmRiNWFlMzc4YWVkZjI3NDE0NmNlZjRjNWE",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-26T18:53:47Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T18:53:47Z"
+          },
+          "message": "Cherry-pick 252432.944@safari-7614-branch (50b1632f78ae). rdar://104656472\n\n    Tweak back/forward list hijacking prevention logic\n    https://bugs.webkit.org/show_bug.cgi?id=248716\n    rdar://102923240\n\n    Reviewed by Geoffrey Garen and Ryan Haddad.\n\n    Tweak back/forward list hijacking prevention logic for better protection and to\n    align our behavior with Chrome.\n\n    In particular, let's consider this example:\n    Yahoo -> Yahoo#a (no userInteraction) -> Google -> Google#a (no user interaction) -> Google#b (no user interaction)\n\n    If we're currently on Google#b and navigate backwards:\n    - Old behavior: We load Google\n    - New behavior: We load Yahoo#a\n    The new behavior makes sense since the user feels like they are on Google\n    (since Google#a & Google#b happened without user interaction) and the last\n    page they viewed before Google was Yahoo#b.\n\n    If we're on Yahoo#a and navigate forwards:\n    - Old behavior: We load Google\n    - New behavior: We load Google#b\n    The new behavior makes sense as a symmetry to the case above.\n\n    Now let's consider this example:\n    Yahoo -> Yahoo#a (no userInteraction) -> Google\n\n    If we're on Google and navigate backwards:\n    - Old behavior: we load Yahoo\n    - New behavior: We load Yahoo#a\n\n    Finally, with this example:\n    Yahoo -> Google -> Google#a (no user interaction) -> Google#b (no user interaction)\n\n    If we're on Yahoo and navigate forwards:\n    - Old behavior: We load Google\n    - New behavior: We load Google#b\n\n    This patch also changes the behavior of the popstate event. We used to fire the\n    popstate event for navigations that were not within the same document. However,\n    this behavior wasn't aligned with the specification [1] or with other browsers.\n    The exploit attached to the radar was also relying on this event to hijack the\n    back/forward navigation and lock the user on a specific site.\n    I updated our code so that the popstate is now only fired for same-document\n    navigations and I updated our tests accordingly. I have verified that our\n    behavior is consistent with Blink on these new test versions.\n\n    * LayoutTests/fast/loader/stateobjects/document-destroyed-navigate-back-expected.txt:\n    * LayoutTests/fast/loader/stateobjects/document-destroyed-navigate-back-with-fragment-scroll-expected.txt:\n    * LayoutTests/fast/loader/stateobjects/document-destroyed-navigate-back.html:\n    * LayoutTests/fast/loader/stateobjects/popstate-does-not-fire-with-page-cache-expected.txt: Renamed from LayoutTests/fast/loader/stateobjects/popstate-fires-with-page-cache-expected.txt.\n    * LayoutTests/fast/loader/stateobjects/popstate-does-not-fire-with-page-cache.html: Renamed from LayoutTests/fast/loader/stateobjects/popstate-fires-with-page-cache.html.\n    * LayoutTests/fast/loader/stateobjects/replacestate-in-iframe-expected.txt:\n    * LayoutTests/fast/loader/stateobjects/resources/popstate-does-not-fire-with-page-cache-1.html: Renamed from LayoutTests/fast/loader/stateobjects/resources/popstate-fires-with-page-cache-1.html.\n    * LayoutTests/fast/loader/stateobjects/resources/popstate-does-not-fire-with-page-cache-2.html: Added.\n    * LayoutTests/fast/loader/stateobjects/resources/popstate-fires-with-page-cache-2.html: Removed.\n    * LayoutTests/fast/loader/stateobjects/resources/replacestate-in-iframe-window-child.html:\n    * Source/WebCore/history/CachedPage.cpp:\n    (WebCore::firePageShowEvent):\n    (WebCore::CachedPage::restore):\n    (WebCore::firePageShowAndPopStateEvents): Deleted.\n    * Source/WebCore/loader/FrameLoader.cpp:\n    (WebCore::FrameLoader::didBeginDocument):\n    (WebCore::FrameLoader::transitionToCommitted):\n    * Source/WebCore/loader/FrameLoader.h:\n    * Source/WebKit/UIProcess/WebBackForwardList.cpp:\n    (WebKit::itemSkippingBackForwardItemsAddedByJSWithoutUserGesture):\n    * Tools/TestWebKitAPI/Tests/WebKit/WKBackForwardList.mm:\n    (runBackForwardNavigationSkipsItemsWithoutUserGestureTest):\n    (TEST):\n    (runBackForwardNavigationDoesNotSkipItemsWithUserGestureTest):\n\n    Canonical link: https://commits.webkit.org/252432.944@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259437@main",
+          "tree": {
+            "sha": "8836938e92b7cfba9e661255239d375d78cbd657",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/8836938e92b7cfba9e661255239d375d78cbd657"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+        "html_url": "https://github.com/WebKit/WebKit/commit/1bf1b5844dfcf02db5ae378aedf274146cef4c5a",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/1bf1b5844dfcf02db5ae378aedf274146cef4c5a/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3d28c4a219c3e18c2439f9d8f474b8704c836b94",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/3d28c4a219c3e18c2439f9d8f474b8704c836b94",
+            "html_url": "https://github.com/WebKit/WebKit/commit/3d28c4a219c3e18c2439f9d8f474b8704c836b94"
+          }
+        ]
+      },
+      {
+        "sha": "87f97d83b3c9f1c5dffc192a0611240110cb6175",
+        "node_id": "C_kwDOExyGPdoAKDg3Zjk3ZDgzYjNjOWYxYzVkZmZjMTkyYTA2MTEyNDAxMTBjYjYxNzU",
+        "commit": {
+          "author": {
+            "name": "Angela Izquierdo Garcia",
+            "email": "a_izquierdogarcia@apple.com",
+            "date": "2023-01-26T16:27:21Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-26T16:27:21Z"
+          },
+          "message": "Cherry-pick 252432.943@safari-7614-branch (c6249012752b). rdar://104655527\n\n    Floating Point Exception in FEConvolveMatrixSoftwareApplier:: applyPatform\n    https://bugs.webkit.org/show_bug.cgi?id=248288\n    rdar://102137760\n\n    There is a division by zero due to the fact that sometimes there is one variable much bigger than other that are implied in a division (clipBottom and iterations) and as c++ rounds down it is consequently zero, which leads to the subsequent exception.\n\n    Reviewed by Geoffrey Garen and David Kilzer.\n\n    * Source/WebCore/platform/graphics/filters/software/FEConvolveMatrixSoftwareApplier.cpp:\n    (WebCore::FEConvolveMatrixSoftwareApplier::setInteriorPixels):\n    (WebCore::FEConvolveMatrixSoftwareApplier::applyPlatform const):\n    * Source/WebCore/platform/graphics/filters/software/FEConvolveMatrixSoftwareApplier.h:\n\n    Canonical link: https://commits.webkit.org/252432.943@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259424@main",
+          "tree": {
+            "sha": "6a6c359d2c7b709bb444ed4edc9ba591d5cb7285",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/6a6c359d2c7b709bb444ed4edc9ba591d5cb7285"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/87f97d83b3c9f1c5dffc192a0611240110cb6175",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/87f97d83b3c9f1c5dffc192a0611240110cb6175",
+        "html_url": "https://github.com/WebKit/WebKit/commit/87f97d83b3c9f1c5dffc192a0611240110cb6175",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/87f97d83b3c9f1c5dffc192a0611240110cb6175/comments",
+        "author": null,
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c212b02072b3652e3c0cb7ef2897f9909c058711",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/c212b02072b3652e3c0cb7ef2897f9909c058711",
+            "html_url": "https://github.com/WebKit/WebKit/commit/c212b02072b3652e3c0cb7ef2897f9909c058711"
+          }
+        ]
+      },
+      {
+        "sha": "13819101c22430f8c2705f29c3aa1de4330bb25b",
+        "node_id": "C_kwDOExyGPdoAKDEzODE5MTAxYzIyNDMwZjhjMjcwNWYyOWMzYWExZGU0MzMwYmIyNWI",
+        "commit": {
+          "author": {
+            "name": "Charlie Wolfe",
+            "email": "charliew@apple.com",
+            "date": "2023-01-25T20:58:48Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T20:58:48Z"
+          },
+          "message": "Cherry-pick 252432.942@safari-7614-branch (d7af255eed5c). rdar://104649116\n\n    cross origin iframe load event can be used for a malicious way\n    https://bugs.webkit.org/show_bug.cgi?id=241753\n    rdar://95467115\n\n    Reviewed by Chris Dumez and Ryan Haddad.\n\n    This bug describes an issue where it is possible to guess a URL that is\n    redirected to by a cross-origin iframe. To fix this, WebKit should fire a\n    load event when the direct parent frame is cross-origin.\n\n    This fix is very similar to what is described in https://crbug.com/1248444.\n\n    * Source/WebCore/loader/FrameLoader.cpp:\n    (WebCore::FrameLoader::loadInSameDocument):\n    * LayoutTests/http/tests/navigation/cross-origin-navigation-fires-onload-expected.txt: Added.\n    * LayoutTests/http/tests/navigation/cross-origin-navigation-fires-onload.html: Added.\n    * LayoutTests/http/tests/navigation/resources/postmessage-on-hashchange.html: Added.\n\n    Canonical link: https://commits.webkit.org/252432.942@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259384@main",
+          "tree": {
+            "sha": "94741d048df4267afcc40c3d57f4a8d646f7616f",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/94741d048df4267afcc40c3d57f4a8d646f7616f"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/13819101c22430f8c2705f29c3aa1de4330bb25b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/13819101c22430f8c2705f29c3aa1de4330bb25b",
+        "html_url": "https://github.com/WebKit/WebKit/commit/13819101c22430f8c2705f29c3aa1de4330bb25b",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/13819101c22430f8c2705f29c3aa1de4330bb25b/comments",
+        "author": {
+          "login": "charliewolfe",
+          "id": 43051392,
+          "node_id": "MDQ6VXNlcjQzMDUxMzky",
+          "avatar_url": "https://avatars.githubusercontent.com/u/43051392?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/charliewolfe",
+          "html_url": "https://github.com/charliewolfe",
+          "followers_url": "https://api.github.com/users/charliewolfe/followers",
+          "following_url": "https://api.github.com/users/charliewolfe/following{/other_user}",
+          "gists_url": "https://api.github.com/users/charliewolfe/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/charliewolfe/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/charliewolfe/subscriptions",
+          "organizations_url": "https://api.github.com/users/charliewolfe/orgs",
+          "repos_url": "https://api.github.com/users/charliewolfe/repos",
+          "events_url": "https://api.github.com/users/charliewolfe/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/charliewolfe/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e7b14b50244d51a9cda3d43a82476d8c20926a76",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/e7b14b50244d51a9cda3d43a82476d8c20926a76",
+            "html_url": "https://github.com/WebKit/WebKit/commit/e7b14b50244d51a9cda3d43a82476d8c20926a76"
+          }
+        ]
+      },
+      {
+        "sha": "3d3143b4e387bffd05ed1f322f8e3e5e7e294107",
+        "node_id": "C_kwDOExyGPdoAKDNkMzE0M2I0ZTM4N2JmZmQwNWVkMWYzMjJmOGUzZTVlN2UyOTQxMDc",
+        "commit": {
+          "author": {
+            "name": "Rob Buis",
+            "email": "rbuis@igalia.com",
+            "date": "2023-01-25T19:35:42Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T19:35:42Z"
+          },
+          "message": "Cherry-pick 256843.3@webkit-2022.12-embargoed (1d7abcd180ab). rdar://104648890\n\n    Protect against empty layout state\n    https://bugs.webkit.org/show_bug.cgi?id=248771\n\n    Reviewed by Alan Baradlay.\n\n    Protect against empty layout state.\n\n    * LayoutTests/fast/block/crash-empty-layoutStateStack-expected.txt: Added.\n    * LayoutTests/fast/block/crash-empty-layoutStateStack.html: Added.\n    * Source/WebCore/rendering/RenderBlock.cpp:\n    (WebCore::RenderBlock::layoutPositionedObject):\n    (WebCore::RenderBlock::markForPaginationRelayoutIfNeeded):\n\n    Canonical link: https://commits.webkit.org/256843.3@webkit-2022.12-embargoed\n\nCanonical link: https://commits.webkit.org/259376@main",
+          "tree": {
+            "sha": "a94c4c7fb2a12a4828908fd5ed03fa28f1cec5ac",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/a94c4c7fb2a12a4828908fd5ed03fa28f1cec5ac"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/3d3143b4e387bffd05ed1f322f8e3e5e7e294107",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/3d3143b4e387bffd05ed1f322f8e3e5e7e294107",
+        "html_url": "https://github.com/WebKit/WebKit/commit/3d3143b4e387bffd05ed1f322f8e3e5e7e294107",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/3d3143b4e387bffd05ed1f322f8e3e5e7e294107/comments",
+        "author": {
+          "login": "rwlbuis",
+          "id": 22796292,
+          "node_id": "MDQ6VXNlcjIyNzk2Mjky",
+          "avatar_url": "https://avatars.githubusercontent.com/u/22796292?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rwlbuis",
+          "html_url": "https://github.com/rwlbuis",
+          "followers_url": "https://api.github.com/users/rwlbuis/followers",
+          "following_url": "https://api.github.com/users/rwlbuis/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rwlbuis/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rwlbuis/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rwlbuis/subscriptions",
+          "organizations_url": "https://api.github.com/users/rwlbuis/orgs",
+          "repos_url": "https://api.github.com/users/rwlbuis/repos",
+          "events_url": "https://api.github.com/users/rwlbuis/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rwlbuis/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6dd5690bed2cc05518d594287d6520a1847c1e96",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/6dd5690bed2cc05518d594287d6520a1847c1e96",
+            "html_url": "https://github.com/WebKit/WebKit/commit/6dd5690bed2cc05518d594287d6520a1847c1e96"
+          }
+        ]
+      },
+      {
+        "sha": "562c83b8958666e8fb3d74344129490b96e3db9c",
+        "node_id": "C_kwDOExyGPdoAKDU2MmM4M2I4OTU4NjY2ZThmYjNkNzQzNDQxMjk0OTBiOTZlM2RiOWM",
+        "commit": {
+          "author": {
+            "name": "Claudio Saavedra",
+            "email": "csaavedra@igalia.com",
+            "date": "2023-01-25T18:10:27Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T18:10:27Z"
+          },
+          "message": "Cherry-pick 256843.2@webkit-2022.12-embargoed (155bed739000). rdar://104648588\n\n    HTMLFrameOwnerElement: use Document::creationURL() for self-reference check\n    https://bugs.webkit.org/show_bug.cgi?id=248469\n\n    Reviewed by Darin Adler.\n\n    Document::url() can be changed through the History API, therefore it's not\n    a reliable source to verify whether a given URL is self-referencing. Use\n    creationURL instead, which is immutable.\n\n    * LayoutTests/http/tests/security/embedded-self-reference-after-url-modified-expected.txt: Added.\n    * LayoutTests/http/tests/security/embedded-self-reference-after-url-modified.html: Added.\n    * Source/WebCore/html/HTMLFrameOwnerElement.cpp:\n    (WebCore::HTMLFrameOwnerElement::isProhibitedSelfReference const):\n\n    Canonical link: https://commits.webkit.org/256843.2@webkit-2022.12-embargoed\n\nCanonical link: https://commits.webkit.org/259370@main",
+          "tree": {
+            "sha": "98ca2d2543391c5362dc99a2155ea81ad415efa1",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/98ca2d2543391c5362dc99a2155ea81ad415efa1"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/562c83b8958666e8fb3d74344129490b96e3db9c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/562c83b8958666e8fb3d74344129490b96e3db9c",
+        "html_url": "https://github.com/WebKit/WebKit/commit/562c83b8958666e8fb3d74344129490b96e3db9c",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/562c83b8958666e8fb3d74344129490b96e3db9c/comments",
+        "author": {
+          "login": "csaavedra",
+          "id": 2523171,
+          "node_id": "MDQ6VXNlcjI1MjMxNzE=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2523171?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/csaavedra",
+          "html_url": "https://github.com/csaavedra",
+          "followers_url": "https://api.github.com/users/csaavedra/followers",
+          "following_url": "https://api.github.com/users/csaavedra/following{/other_user}",
+          "gists_url": "https://api.github.com/users/csaavedra/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/csaavedra/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/csaavedra/subscriptions",
+          "organizations_url": "https://api.github.com/users/csaavedra/orgs",
+          "repos_url": "https://api.github.com/users/csaavedra/repos",
+          "events_url": "https://api.github.com/users/csaavedra/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/csaavedra/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "cd77ac52ebd261c83be029e8d83746259f67f07d",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/cd77ac52ebd261c83be029e8d83746259f67f07d",
+            "html_url": "https://github.com/WebKit/WebKit/commit/cd77ac52ebd261c83be029e8d83746259f67f07d"
+          }
+        ]
+      },
+      {
+        "sha": "33240daf5e984a5c6a00bf1aee8ee4ac2f27477e",
+        "node_id": "C_kwDOExyGPdoAKDMzMjQwZGFmNWU5ODRhNWM2YTAwYmYxYWVlOGVlNGFjMmYyNzQ3N2U",
+        "commit": {
+          "author": {
+            "name": "Alex Christensen",
+            "email": "achristensen@apple.com",
+            "date": "2023-01-25T17:40:41Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T17:40:41Z"
+          },
+          "message": "Cherry-pick 252432.898@safari-7614-branch (57748248ae92). rdar://104648262\n\n    Truncate title before adding to _WKSessionState\n    https://bugs.webkit.org/show_bug.cgi?id=248664\n    rdar://102444516\n\n    Reviewed by Chris Dumez, Mark Gee, and Jonathan Bedard.\n\n    Truncate the title to 1000 characters like we do everywhere else we send the title from the web content process.\n\n    * Source/WebKit/WebProcess/WebCoreSupport/SessionStateConversion.cpp:\n    (WebKit::toBackForwardListItemState):\n    * Tools/TestWebKitAPI/Tests/WebKit/WKBackForwardList.mm:\n    (TEST):\n\n    Canonical link: https://commits.webkit.org/252432.898@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259367@main",
+          "tree": {
+            "sha": "7108be4437b439d38d1f44202062d9a55f3d2bcd",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/7108be4437b439d38d1f44202062d9a55f3d2bcd"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/33240daf5e984a5c6a00bf1aee8ee4ac2f27477e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/33240daf5e984a5c6a00bf1aee8ee4ac2f27477e",
+        "html_url": "https://github.com/WebKit/WebKit/commit/33240daf5e984a5c6a00bf1aee8ee4ac2f27477e",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/33240daf5e984a5c6a00bf1aee8ee4ac2f27477e/comments",
+        "author": {
+          "login": "achristensen07",
+          "id": 1481072,
+          "node_id": "MDQ6VXNlcjE0ODEwNzI=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1481072?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/achristensen07",
+          "html_url": "https://github.com/achristensen07",
+          "followers_url": "https://api.github.com/users/achristensen07/followers",
+          "following_url": "https://api.github.com/users/achristensen07/following{/other_user}",
+          "gists_url": "https://api.github.com/users/achristensen07/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/achristensen07/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/achristensen07/subscriptions",
+          "organizations_url": "https://api.github.com/users/achristensen07/orgs",
+          "repos_url": "https://api.github.com/users/achristensen07/repos",
+          "events_url": "https://api.github.com/users/achristensen07/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/achristensen07/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "865cbc8abfc520b04889af320a289f66905733a1",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/865cbc8abfc520b04889af320a289f66905733a1",
+            "html_url": "https://github.com/WebKit/WebKit/commit/865cbc8abfc520b04889af320a289f66905733a1"
+          }
+        ]
+      },
+      {
+        "sha": "4b1a0c93dadf031285667d2d3fc09ecbca5001d1",
+        "node_id": "C_kwDOExyGPdoAKDRiMWEwYzkzZGFkZjAzMTI4NTY2N2QyZDNmYzA5ZWNiY2E1MDAxZDE",
+        "commit": {
+          "author": {
+            "name": "Matt Woodrow",
+            "email": "mattwoodrow@apple.com",
+            "date": "2023-01-25T04:09:52Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T04:09:52Z"
+          },
+          "message": "Cherry-pick 252432.845@safari-7614-branch (2fc9fcfb0857). rdar://104611648\n\n    Use-after-free in RemoteImageDecoderAVFProxy::createDecoder.\n    https://bugs.webkit.org/show_bug.cgi?id=248317\n    <rdar://101576935>\n\n    Reviewed by Jonathan Bedard and David Kilzer.\n\n    Passes a WeakPtr into the lambda instead, so that we can check if it's still\n    alive before accessing it.\n\n    * Source/WebKit/GPUProcess/media/RemoteImageDecoderAVFProxy.cpp:\n    (WebKit::RemoteImageDecoderAVFProxy::createDecoder):\n\n    Canonical link: https://commits.webkit.org/252432.845@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259335@main",
+          "tree": {
+            "sha": "ddff047d8713f97af87828a80a6bb1da48732658",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/ddff047d8713f97af87828a80a6bb1da48732658"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/4b1a0c93dadf031285667d2d3fc09ecbca5001d1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/4b1a0c93dadf031285667d2d3fc09ecbca5001d1",
+        "html_url": "https://github.com/WebKit/WebKit/commit/4b1a0c93dadf031285667d2d3fc09ecbca5001d1",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/4b1a0c93dadf031285667d2d3fc09ecbca5001d1/comments",
+        "author": {
+          "login": "mattwoodrow",
+          "id": 1445066,
+          "node_id": "MDQ6VXNlcjE0NDUwNjY=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1445066?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mattwoodrow",
+          "html_url": "https://github.com/mattwoodrow",
+          "followers_url": "https://api.github.com/users/mattwoodrow/followers",
+          "following_url": "https://api.github.com/users/mattwoodrow/following{/other_user}",
+          "gists_url": "https://api.github.com/users/mattwoodrow/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/mattwoodrow/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/mattwoodrow/subscriptions",
+          "organizations_url": "https://api.github.com/users/mattwoodrow/orgs",
+          "repos_url": "https://api.github.com/users/mattwoodrow/repos",
+          "events_url": "https://api.github.com/users/mattwoodrow/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/mattwoodrow/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d7b129acb04cbcb1d943ed6cc46379062ab819a2",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/d7b129acb04cbcb1d943ed6cc46379062ab819a2",
+            "html_url": "https://github.com/WebKit/WebKit/commit/d7b129acb04cbcb1d943ed6cc46379062ab819a2"
+          }
+        ]
+      },
+      {
+        "sha": "574c3859cc0c99c8947c785c44f8b76a45c1fd17",
+        "node_id": "C_kwDOExyGPdoAKDU3NGMzODU5Y2MwYzk5Yzg5NDdjNzg1YzQ0ZjhiNzZhNDVjMWZkMTc",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-25T03:18:31Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T03:18:31Z"
+          },
+          "message": "Cherry-pick 252432.841@safari-7614-branch (a47510d4bcf4). rdar://104609847\n\n    Fix potential crash under IntersectionObserver::disconnect()\n    https://bugs.webkit.org/show_bug.cgi?id=248111\n    rdar://100355921\n\n    Reviewed by Jonathan Bedard and Ryosuke Niwa.\n\n    Make sure we protect the intersection observers and resize observers before\n    calling disconnect() on them in Document::commonTeardown().\n\n    This is a speculative fix to address the crash in the radar, which I was\n    unable to reproduce.\n\n    * LayoutTests/fast/dom/lazy-loading-iframe-destruction-crash-expected.txt: Added.\n    * LayoutTests/fast/dom/lazy-loading-iframe-destruction-crash.html: Added.\n    Include test from the radar, even though it didn't reproduce the issue for me.\n\n    * Source/WebCore/dom/Document.cpp:\n    (WebCore::Document::commonTeardown):\n\n    Canonical link: https://commits.webkit.org/252432.841@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259332@main",
+          "tree": {
+            "sha": "5b827abfb2ffa8198d463db7ae3f8151fa9e3fef",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/5b827abfb2ffa8198d463db7ae3f8151fa9e3fef"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/574c3859cc0c99c8947c785c44f8b76a45c1fd17",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/574c3859cc0c99c8947c785c44f8b76a45c1fd17",
+        "html_url": "https://github.com/WebKit/WebKit/commit/574c3859cc0c99c8947c785c44f8b76a45c1fd17",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/574c3859cc0c99c8947c785c44f8b76a45c1fd17/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "fb16e152e4f6b4e8d4d20035e34034431d046e57",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/fb16e152e4f6b4e8d4d20035e34034431d046e57",
+            "html_url": "https://github.com/WebKit/WebKit/commit/fb16e152e4f6b4e8d4d20035e34034431d046e57"
+          }
+        ]
+      },
+      {
+        "sha": "3c089e68eb066333c057a99dd3a511fd3495e5bf",
+        "node_id": "C_kwDOExyGPdoAKDNjMDg5ZTY4ZWIwNjYzMzNjMDU3YTk5ZGQzYTUxMWZkMzQ5NWU1YmY",
+        "commit": {
+          "author": {
+            "name": "Aditya Keerthi",
+            "email": "akeerthi@apple.com",
+            "date": "2023-01-25T02:47:04Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T02:47:04Z"
+          },
+          "message": "Cherry-pick 252432.840@safari-7614-branch (56f36c096a15). rdar://104609397\n\n    Share Sheet may parse complex image formats\n    https://bugs.webkit.org/show_bug.cgi?id=248097\n    rdar://99294213\n\n    Reviewed by Jonathan Bedard and Tim Horton.\n\n    When a URL is given to the Share Sheet, the Share Sheet displays a thumbnail\n    defined by the URL, in the UIProcess. The Web Share API allows the URL to be\n    handed to the UIProcess from the WebProcess, via IPC. Consequently, there\n    exists a way to trigger image decoding in the UIProcess from a compromised\n    WebProcess, or one-click from a user.\n\n    To fix, display a placeholder icon rather than showing a thumbnail defined by\n    the URL in the Share Sheet. This behavior is achieved by specifying partial\n    `LPLinkMetadata`.\n\n    * Source/WebKit/UIProcess/Cocoa/WKShareSheet.mm:\n    (-[WKShareSheetURLItemProvider initWithURL:]):\n\n    Mark the metadata as incomplete so that it may be refetched when the URL is\n    actually shared.\n\n    (-[WKShareSheetURLItemProvider item]):\n    (-[WKShareSheetURLItemProvider activityViewControllerLinkMetadata:]):\n    (-[WKShareSheet presentWithParameters:inRect:completionHandler:]):\n\n    Only apply this mitigation when the Share Sheet is invoked using the Web Share\n    API. Other contexts require more significant user interaction and are not done\n    through IPC from the WebProcess.\n\n    Canonical link: https://commits.webkit.org/252432.840@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259328@main",
+          "tree": {
+            "sha": "a6b1987525cc52c06ac42fc9c2ea31d794430e49",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/a6b1987525cc52c06ac42fc9c2ea31d794430e49"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/3c089e68eb066333c057a99dd3a511fd3495e5bf",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/3c089e68eb066333c057a99dd3a511fd3495e5bf",
+        "html_url": "https://github.com/WebKit/WebKit/commit/3c089e68eb066333c057a99dd3a511fd3495e5bf",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/3c089e68eb066333c057a99dd3a511fd3495e5bf/comments",
+        "author": {
+          "login": "pxlcoder",
+          "id": 1904138,
+          "node_id": "MDQ6VXNlcjE5MDQxMzg=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1904138?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pxlcoder",
+          "html_url": "https://github.com/pxlcoder",
+          "followers_url": "https://api.github.com/users/pxlcoder/followers",
+          "following_url": "https://api.github.com/users/pxlcoder/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pxlcoder/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pxlcoder/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pxlcoder/subscriptions",
+          "organizations_url": "https://api.github.com/users/pxlcoder/orgs",
+          "repos_url": "https://api.github.com/users/pxlcoder/repos",
+          "events_url": "https://api.github.com/users/pxlcoder/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pxlcoder/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "50d7b35052eb1791708bb5bab76fdcd2558cf12c",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/50d7b35052eb1791708bb5bab76fdcd2558cf12c",
+            "html_url": "https://github.com/WebKit/WebKit/commit/50d7b35052eb1791708bb5bab76fdcd2558cf12c"
+          }
+        ]
+      },
+      {
+        "sha": "0675bbf6a5db80a0dbf04ae7a7485a09b056d032",
+        "node_id": "C_kwDOExyGPdoAKDA2NzViYmY2YTVkYjgwYTBkYmYwNGFlN2E3NDg1YTA5YjA1NmQwMzI",
+        "commit": {
+          "author": {
+            "name": "Arunsundar Kannan",
+            "email": "arunsundar_kannan@apple.com",
+            "date": "2023-01-25T01:16:02Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T01:16:02Z"
+          },
+          "message": "Cherry-pick 252432.838@safari-7614-branch (665170902bfa). rdar://104601528\n\n    UAF crash occurs during a style update when an older freed HTMLElement is accessed\n    https://bugs.webkit.org/show_bug.cgi?id=247389\n    rdar://101420898\n\n    Reviewed by Ryosuke Niwa and Ryan Haddad.\n\n    * LayoutTests/fast/forms/textfield-input-type-crash-onblur-expected.txt: Added.\n    * LayoutTests/fast/forms/textfield-input-type-crash-onblur.html: Added.\n    * Source/WebCore/html/HTMLInputElement.cpp:\n    (WebCore::HTMLInputElement::dataListMayHaveChanged):\n    * Source/WebCore/html/HTMLOptionElement.cpp:\n    (WebCore::HTMLOptionElement::childrenChanged):\n    * Source/WebCore/html/TextFieldInputType.cpp:\n    (WebCore::TextFieldInputType::createDataListDropdownIndicator):\n    (WebCore::TextFieldInputType::dataListMayHaveChanged):\n\n    Canonical link: https://commits.webkit.org/252432.838@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259321@main",
+          "tree": {
+            "sha": "d8cb7bf39f28935481a4b13cdaf3bdc69e8b6492",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/d8cb7bf39f28935481a4b13cdaf3bdc69e8b6492"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/0675bbf6a5db80a0dbf04ae7a7485a09b056d032",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/0675bbf6a5db80a0dbf04ae7a7485a09b056d032",
+        "html_url": "https://github.com/WebKit/WebKit/commit/0675bbf6a5db80a0dbf04ae7a7485a09b056d032",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/0675bbf6a5db80a0dbf04ae7a7485a09b056d032/comments",
+        "author": {
+          "login": "arunsundarapple",
+          "id": 114944831,
+          "node_id": "U_kgDOBtnrPw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/114944831?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/arunsundarapple",
+          "html_url": "https://github.com/arunsundarapple",
+          "followers_url": "https://api.github.com/users/arunsundarapple/followers",
+          "following_url": "https://api.github.com/users/arunsundarapple/following{/other_user}",
+          "gists_url": "https://api.github.com/users/arunsundarapple/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/arunsundarapple/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/arunsundarapple/subscriptions",
+          "organizations_url": "https://api.github.com/users/arunsundarapple/orgs",
+          "repos_url": "https://api.github.com/users/arunsundarapple/repos",
+          "events_url": "https://api.github.com/users/arunsundarapple/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/arunsundarapple/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "827706a34ae74ff5f6b0b6dcb0bcd017860c4d48",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/827706a34ae74ff5f6b0b6dcb0bcd017860c4d48",
+            "html_url": "https://github.com/WebKit/WebKit/commit/827706a34ae74ff5f6b0b6dcb0bcd017860c4d48"
+          }
+        ]
+      },
+      {
+        "sha": "91c8c8744db1506c01a913220608cc3d33a75a09",
+        "node_id": "C_kwDOExyGPdoAKDkxYzhjODc0NGRiMTUwNmMwMWE5MTMyMjA2MDhjYzNkMzNhNzVhMDk",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-25T00:52:28Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-25T00:52:28Z"
+          },
+          "message": "Cherry-pick 252432.826@safari-7614-branch (baca9afc289e). rdar://104600755\n\n    Properly mark history items added without user gesture\n    https://bugs.webkit.org/show_bug.cgi?id=247909\n    rdar://100579077\n\n    Reviewed by Geoffrey Garen.\n\n    We recently introduced logic to mark history items as \"created by JavaScript\n    without a user gesture\" so that those could be skipped when the user navigates\n    back/forward via the browser UI.\n\n    However, which history items we marked with such flag was a little unexpected\n    and didn't quite match what Chrome did to address the same problem.\n\n    In particular, if on URL1 and then calling `pushState(null, null, 'a')` in JS\n    without a user gesture. We would previously mark the HistoryItem for URL1 as\n    created without a user gesture, instead of marking the one for URL1#a. URL1#a\n    is the actual HistoryItem created by JS so it makes more sense to mark this\n    one (which also matches Chrome's behavior).\n\n    * Source/WebCore/loader/FrameLoader.cpp:\n    (WebCore::FrameLoader::loadInSameDocument):\n    * Source/WebCore/loader/HistoryController.cpp:\n    (WebCore::FrameLoader::HistoryController::pushState):\n    * Tools/TestWebKitAPI/Tests/WebKit/WKBackForwardList.mm:\n    (TEST):\n\n    Canonical link: https://commits.webkit.org/252432.826@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259319@main",
+          "tree": {
+            "sha": "1aa90245a97ff8c871cf54000036915ac1d47f01",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/1aa90245a97ff8c871cf54000036915ac1d47f01"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/91c8c8744db1506c01a913220608cc3d33a75a09",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/91c8c8744db1506c01a913220608cc3d33a75a09",
+        "html_url": "https://github.com/WebKit/WebKit/commit/91c8c8744db1506c01a913220608cc3d33a75a09",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/91c8c8744db1506c01a913220608cc3d33a75a09/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "83826f3fef4076f2c5be36785b2799f351bf1c78",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/83826f3fef4076f2c5be36785b2799f351bf1c78",
+            "html_url": "https://github.com/WebKit/WebKit/commit/83826f3fef4076f2c5be36785b2799f351bf1c78"
+          }
+        ]
+      },
+      {
+        "sha": "d85daec3645fee77f09a0f3e59928f1e1b9aa287",
+        "node_id": "C_kwDOExyGPdoAKGQ4NWRhZWMzNjQ1ZmVlNzdmMDlhMGYzZTU5OTI4ZjFlMWI5YWEyODc",
+        "commit": {
+          "author": {
+            "name": "Ryosuke Niwa",
+            "email": "rniwa@webkit.org",
+            "date": "2023-01-24T19:03:28Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-24T19:03:28Z"
+          },
+          "message": "Cherry-pick 252432.816@safari-7614-branch (fa17c4664715). rdar://104600217\n\n    ASSERTION FAILED: !document().selection().selection().isOrphan() in ContainerNode::removeNodeWithScriptAssertion\n    https://bugs.webkit.org/show_bug.cgi?id=247781\n    rdar://101497964\n\n    Reviewed by Wenson Hsieh, Darin Adler and Geoffrey Garen.\n\n    The bug was caused by VisibleSelection::setBase setting selection ends to point to nodes\n    in a wrong document as a side effect of calling VisibleSelection::validate when m_anchor\n    isn't cleared due to a node removal when live range selection is disabled.\n\n    * LayoutTests/editing/selection/modify-extend-iframe-orphan-expected.txt: Added.\n    * LayoutTests/editing/selection/modify-extend-iframe-orphan.html: Added.\n    * Source/WebCore/editing/FrameSelection.cpp:\n    (WebCore::selectionIsOrphanedOrBelongsToWrongDocument):\n    (WebCore::FrameSelection::willBeModified):\n\n    Canonical link: https://commits.webkit.org/252432.816@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259294@main",
+          "tree": {
+            "sha": "41166f79af0ae388eca691628fedada2f0c4fb89",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/41166f79af0ae388eca691628fedada2f0c4fb89"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/d85daec3645fee77f09a0f3e59928f1e1b9aa287",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/d85daec3645fee77f09a0f3e59928f1e1b9aa287",
+        "html_url": "https://github.com/WebKit/WebKit/commit/d85daec3645fee77f09a0f3e59928f1e1b9aa287",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/d85daec3645fee77f09a0f3e59928f1e1b9aa287/comments",
+        "author": {
+          "login": "rniwa",
+          "id": 285965,
+          "node_id": "MDQ6VXNlcjI4NTk2NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/285965?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rniwa",
+          "html_url": "https://github.com/rniwa",
+          "followers_url": "https://api.github.com/users/rniwa/followers",
+          "following_url": "https://api.github.com/users/rniwa/following{/other_user}",
+          "gists_url": "https://api.github.com/users/rniwa/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/rniwa/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/rniwa/subscriptions",
+          "organizations_url": "https://api.github.com/users/rniwa/orgs",
+          "repos_url": "https://api.github.com/users/rniwa/repos",
+          "events_url": "https://api.github.com/users/rniwa/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/rniwa/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6bac3a2a1f025e5073f2fe314405c1938775d2a1",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/6bac3a2a1f025e5073f2fe314405c1938775d2a1",
+            "html_url": "https://github.com/WebKit/WebKit/commit/6bac3a2a1f025e5073f2fe314405c1938775d2a1"
+          }
+        ]
+      },
+      {
+        "sha": "6bac3a2a1f025e5073f2fe314405c1938775d2a1",
+        "node_id": "C_kwDOExyGPdoAKDZiYWMzYTJhMWYwMjVlNTA3M2YyZmUzMTQ0MDVjMTkzODc3NWQyYTE",
+        "commit": {
+          "author": {
+            "name": "Wenson Hsieh",
+            "email": "wenson_hsieh@apple.com",
+            "date": "2023-01-24T18:57:27Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-24T18:57:27Z"
+          },
+          "message": "Cherry-pick 252432.808@safari-7614-branch (b6d2a12d8d70). rdar://104600105\n\n    [macOS] WebContextMenuProxy use-after-free when triggering context menu presentation using IPC\n    https://bugs.webkit.org/show_bug.cgi?id=247590\n    rdar://102049265\n\n    Reviewed by Aditya Keerthi.\n\n    Replace these raw pointers with `WeakPtr` to avoid accessing invalid memory, in the case where a\n    compromised web process triggers context menu presentation on macOS by sending an out-of-band\n    `WebPageProxy::ShowContextMenu` IPC message.\n\n    * Source/WebKit/UIProcess/mac/WebContextMenuProxyMac.mm:\n    (-[WKMenuTarget menuProxy]):\n    (-[WKMenuTarget forwardContextMenuAction:]):\n\n    Canonical link: https://commits.webkit.org/252432.808@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259293@main",
+          "tree": {
+            "sha": "b4a8c4e0ba3cf79ce3e936530b8936caf8b5a65d",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/b4a8c4e0ba3cf79ce3e936530b8936caf8b5a65d"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/6bac3a2a1f025e5073f2fe314405c1938775d2a1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/6bac3a2a1f025e5073f2fe314405c1938775d2a1",
+        "html_url": "https://github.com/WebKit/WebKit/commit/6bac3a2a1f025e5073f2fe314405c1938775d2a1",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/6bac3a2a1f025e5073f2fe314405c1938775d2a1/comments",
+        "author": {
+          "login": "whsieh",
+          "id": 1448295,
+          "node_id": "MDQ6VXNlcjE0NDgyOTU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1448295?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/whsieh",
+          "html_url": "https://github.com/whsieh",
+          "followers_url": "https://api.github.com/users/whsieh/followers",
+          "following_url": "https://api.github.com/users/whsieh/following{/other_user}",
+          "gists_url": "https://api.github.com/users/whsieh/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/whsieh/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/whsieh/subscriptions",
+          "organizations_url": "https://api.github.com/users/whsieh/orgs",
+          "repos_url": "https://api.github.com/users/whsieh/repos",
+          "events_url": "https://api.github.com/users/whsieh/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/whsieh/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d64bf428fb59d306c6723e38f69d90e7d2b92c90",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/d64bf428fb59d306c6723e38f69d90e7d2b92c90",
+            "html_url": "https://github.com/WebKit/WebKit/commit/d64bf428fb59d306c6723e38f69d90e7d2b92c90"
+          }
+        ]
+      },
+      {
+        "sha": "589e3edb7b1c0d3f8d78d399fadd9a54d9c062d4",
+        "node_id": "C_kwDOExyGPdoAKDU4OWUzZWRiN2IxYzBkM2Y4ZDc4ZDM5OWZhZGQ5YTU0ZDljMDYyZDQ",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2023-01-24T18:36:15Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-24T18:36:15Z"
+          },
+          "message": "Cherry-pick 252432.806@safari-7614-branch (a09205d980f6). rdar://104599817\n\n    Assertion hit under IdTargetObserverRegistry::notifyObservers()\n    https://bugs.webkit.org/show_bug.cgi?id=247592\n    rdar://101454107\n\n    Reviewed by Aditya Keerthi, Wenson Hsieh and Geoffrey Garen.\n\n    ListAttributeTargetObserver::idTargetChanged() is not safe to re-enter. As a result,\n    we have an assertion and a runtime check to protect against this. However, it was\n    still possible to hit this assertion in debug.\n\n    ListAttributeTargetObserver::idTargetChanged() would call\n    TextFieldInputType::dataListMayHaveChanged() which could run script by calling\n    createDataListDropdownIndicator(). The script could then change the datalist\n    element's id, which would attempt to re-enter.\n\n    This patch addresses the issue by calling dataListMayHaveChanged() asynchronously.\n\n    * LayoutTests/fast/forms/datalist/datalist-idTargetChanged-crash-expected.txt: Added.\n    * LayoutTests/fast/forms/datalist/datalist-idTargetChanged-crash.html: Added.\n    * Source/WebCore/html/HTMLInputElement.cpp:\n    (WebCore::ListAttributeTargetObserver::idTargetChanged):\n\n    Canonical link: https://commits.webkit.org/252432.806@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/259290@main",
+          "tree": {
+            "sha": "a887573b36dd58c694f3fea2225ea5a2a59b0bcf",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/a887573b36dd58c694f3fea2225ea5a2a59b0bcf"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/589e3edb7b1c0d3f8d78d399fadd9a54d9c062d4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/589e3edb7b1c0d3f8d78d399fadd9a54d9c062d4",
+        "html_url": "https://github.com/WebKit/WebKit/commit/589e3edb7b1c0d3f8d78d399fadd9a54d9c062d4",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/589e3edb7b1c0d3f8d78d399fadd9a54d9c062d4/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0214f5ed6d3423894be20f9a789e2807ddd1dcfe",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/0214f5ed6d3423894be20f9a789e2807ddd1dcfe",
+            "html_url": "https://github.com/WebKit/WebKit/commit/0214f5ed6d3423894be20f9a789e2807ddd1dcfe"
+          }
+        ]
+      },
+      {
+        "sha": "e0e9244ff3e75eec3323507e98f435e780bd0264",
+        "node_id": "C_kwDOExyGPdoAKGUwZTkyNDRmZjNlNzVlZWMzMzIzNTA3ZTk4ZjQzNWU3ODBiZDAyNjQ",
+        "commit": {
+          "author": {
+            "name": "Justin Michaud",
+            "email": "justin_michaud@apple.com",
+            "date": "2023-01-11T17:46:18Z"
+          },
+          "committer": {
+            "name": "Justin Michaud",
+            "email": "justin_michaud@apple.com",
+            "date": "2023-01-11T17:46:18Z"
+          },
+          "message": "Throwing a v128 should not clobber other stack slots.\nhttps://bugs.webkit.org/show_bug.cgi?id=250312\n\nReviewed by Yusuke Suzuki.\n\nThrowing a v128 is not currently supported, so we only allocate jsvalue-sized\nstack slots. This is bad, because we still MoveVector, and this can cause\nus to clobber important things. We should not clobber important things.\n\n* JSTests/wasm/stress/simd-exception-throwing-v128-clobbers-fp.js: Added.\n(catch):\n* JSTests/wasm/stress/simd-exception-throwing-v128-clobbers-fp.wasm: Added.\n* JSTests/wasm/stress/simd-exception-throwing-v128-clobbers-fp.wat: Added.\n* JSTests/wasm/stress/simd-tail-calls-throw.js: Added.\n(from.string_appeared_here.import.as.assert.from.string_appeared_here.let.wat.module.func.start.export.string_appeared_here.call.f1.func.f1.local.v128.try.catch_all.return_call.f2.func.f2.async test):\n* Source/JavaScriptCore/wasm/WasmAirIRGenerator64.cpp:\n(JSC::Wasm::AirIRGenerator64::addThrow):\n(JSC::Wasm::AirIRGenerator64::emitTailCallPatchpoint):\n* Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp:\n(JSC::Wasm::B3IRGenerator::addThrow):\n(JSC::Wasm::B3IRGenerator::createTailCallPatchpoint):\n\nCanonical link: https://commits.webkit.org/258789@main",
+          "tree": {
+            "sha": "7b9998489858b673ac209db96648ad0f11b4c0f6",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/7b9998489858b673ac209db96648ad0f11b4c0f6"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/e0e9244ff3e75eec3323507e98f435e780bd0264",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/e0e9244ff3e75eec3323507e98f435e780bd0264",
+        "html_url": "https://github.com/WebKit/WebKit/commit/e0e9244ff3e75eec3323507e98f435e780bd0264",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/e0e9244ff3e75eec3323507e98f435e780bd0264/comments",
+        "author": {
+          "login": "justinmichaud",
+          "id": 513943,
+          "node_id": "MDQ6VXNlcjUxMzk0Mw==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/513943?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/justinmichaud",
+          "html_url": "https://github.com/justinmichaud",
+          "followers_url": "https://api.github.com/users/justinmichaud/followers",
+          "following_url": "https://api.github.com/users/justinmichaud/following{/other_user}",
+          "gists_url": "https://api.github.com/users/justinmichaud/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/justinmichaud/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/justinmichaud/subscriptions",
+          "organizations_url": "https://api.github.com/users/justinmichaud/orgs",
+          "repos_url": "https://api.github.com/users/justinmichaud/repos",
+          "events_url": "https://api.github.com/users/justinmichaud/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/justinmichaud/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "justinmichaud",
+          "id": 513943,
+          "node_id": "MDQ6VXNlcjUxMzk0Mw==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/513943?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/justinmichaud",
+          "html_url": "https://github.com/justinmichaud",
+          "followers_url": "https://api.github.com/users/justinmichaud/followers",
+          "following_url": "https://api.github.com/users/justinmichaud/following{/other_user}",
+          "gists_url": "https://api.github.com/users/justinmichaud/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/justinmichaud/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/justinmichaud/subscriptions",
+          "organizations_url": "https://api.github.com/users/justinmichaud/orgs",
+          "repos_url": "https://api.github.com/users/justinmichaud/repos",
+          "events_url": "https://api.github.com/users/justinmichaud/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/justinmichaud/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "cd2a1fbef4618f12a8b08ad464162fa4fef51061",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/cd2a1fbef4618f12a8b08ad464162fa4fef51061",
+            "html_url": "https://github.com/WebKit/WebKit/commit/cd2a1fbef4618f12a8b08ad464162fa4fef51061"
+          }
+        ]
+      },
+      {
+        "sha": "2885a1eadc3ced1212d4e9564dda12ee597438e7",
+        "node_id": "C_kwDOExyGPdoAKDI4ODVhMWVhZGMzY2VkMTIxMmQ0ZTk1NjRkZGExMmVlNTk3NDM4ZTc",
+        "commit": {
+          "author": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-09T16:11:26Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2023-01-09T16:11:26Z"
+          },
+          "message": "[PrettyPatch] XSS vulnerability in file name\nhttps://bugs.webkit.org/show_bug.cgi?id=250222\nrdar://95708874\n\nReviewed by Alexey Proskuryakov.\n\n* Websites/bugs.webkit.org/PrettyPatch/PrettyPatch.rb: Escape file name.\n\nCanonical link: https://commits.webkit.org/258665@main",
+          "tree": {
+            "sha": "ddae4f394d1540d46303105f8071785a981bf3e4",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/ddae4f394d1540d46303105f8071785a981bf3e4"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/2885a1eadc3ced1212d4e9564dda12ee597438e7",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/2885a1eadc3ced1212d4e9564dda12ee597438e7",
+        "html_url": "https://github.com/WebKit/WebKit/commit/2885a1eadc3ced1212d4e9564dda12ee597438e7",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/2885a1eadc3ced1212d4e9564dda12ee597438e7/comments",
+        "author": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "12c3e37c918e8ab5344905e7e4894be3cf86596e",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/12c3e37c918e8ab5344905e7e4894be3cf86596e",
+            "html_url": "https://github.com/WebKit/WebKit/commit/12c3e37c918e8ab5344905e7e4894be3cf86596e"
+          }
+        ]
+      },
+      {
+        "sha": "c2a70d01d068b1a84dfcb28f95df527f95d2248b",
+        "node_id": "C_kwDOExyGPdoAKGMyYTcwZDAxZDA2OGIxYTg0ZGZjYjI4Zjk1ZGY1MjdmOTVkMjI0OGI",
+        "commit": {
+          "author": {
+            "name": "Matthew Finkel",
+            "email": "sysrqb@apple.com",
+            "date": "2022-12-20T02:41:50Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-20T02:41:50Z"
+          },
+          "message": "Cherry-pick 252432.809@safari-7614-branch (b25c50a4df75). rdar://101776770\n\n    Correctly handle loading subframes in WebArchives\n    https://bugs.webkit.org/show_bug.cgi?id=247292\n    rdar://101776770\n\n    Reviewed by Chris Dumez.\n\n    When WebArchives are loaded, the URL associated with each resource has\n    \"webarchive+\" prepended on its scheme. This ensures cross-origin isolation\n    between the document loaded from a WebArchive and an externally loaded\n    document. This prefixed-scheme is affecting iframe loading because it results\n    in an unrecognized scheme that can't be handled. Now we obtain the original\n    scheme by stripping the prefix, and we use this modified scheme in the request\n    URL.\n\n    * Source/WebCore/loader/FrameLoader.cpp:\n    (WebCore::FrameLoader::loadArchive):\n\n    Canonical link: https://commits.webkit.org/252432.809@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/258117@main",
+          "tree": {
+            "sha": "d5e7653927864da15d625d1340c451287bdf156a",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/d5e7653927864da15d625d1340c451287bdf156a"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/c2a70d01d068b1a84dfcb28f95df527f95d2248b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/c2a70d01d068b1a84dfcb28f95df527f95d2248b",
+        "html_url": "https://github.com/WebKit/WebKit/commit/c2a70d01d068b1a84dfcb28f95df527f95d2248b",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/c2a70d01d068b1a84dfcb28f95df527f95d2248b/comments",
+        "author": {
+          "login": "sysrqb",
+          "id": 1684193,
+          "node_id": "MDQ6VXNlcjE2ODQxOTM=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1684193?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sysrqb",
+          "html_url": "https://github.com/sysrqb",
+          "followers_url": "https://api.github.com/users/sysrqb/followers",
+          "following_url": "https://api.github.com/users/sysrqb/following{/other_user}",
+          "gists_url": "https://api.github.com/users/sysrqb/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/sysrqb/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/sysrqb/subscriptions",
+          "organizations_url": "https://api.github.com/users/sysrqb/orgs",
+          "repos_url": "https://api.github.com/users/sysrqb/repos",
+          "events_url": "https://api.github.com/users/sysrqb/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/sysrqb/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "56aa37f2fb910067390d664215376202a81cf464",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/56aa37f2fb910067390d664215376202a81cf464",
+            "html_url": "https://github.com/WebKit/WebKit/commit/56aa37f2fb910067390d664215376202a81cf464"
+          }
+        ]
+      },
+      {
+        "sha": "98940f219ba0e3eb6d958af483b73dd9cc75c28c",
+        "node_id": "C_kwDOExyGPdoAKDk4OTQwZjIxOWJhMGUzZWI2ZDk1OGFmNDgzYjczZGQ5Y2M3NWMyOGM",
+        "commit": {
+          "author": {
+            "name": "Mark Lam",
+            "email": "mark.lam@apple.com",
+            "date": "2022-12-20T01:32:15Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-20T01:32:15Z"
+          },
+          "message": "Cherry-pick 252432.839@safari-7614-branch (71cdc1c09ef1). rdar://102531234\n\n    The provenType filtering in FTL's speculateRealNumber is incorrect.\n    https://bugs.webkit.org/show_bug.cgi?id=248266\n    <rdar://problem/102531234>\n\n    Reviewed by Justin Michaud.\n\n    speculateRealNumber does a doubleEqual compare, which filters out double values which\n    are not NaN.  NaN values will fall through to the `intCase` block.  In the `intCase` block,\n    the isNotInt32() check there was given a proven type that wrongly filters out ~SpecFullDouble.\n\n    Consider a scenario where the edge was proven to be { SpecInt32Only, SpecDoubleReal,\n    SpecDoublePureNaN }.  SpecFullDouble is defined as SpecDoubleReal | SpecDoubleNaN, and\n    SpecDoubleNaN is defined as SpecDoublePureNaN | SpecDoubleImpureNaN.  Hence, the filtering\n    of the proven type with ~SpecFullDouble means that isNotInt32() will effectively be given\n    a proven type of\n\n        { SpecInt32Only, SpecDoubleReal, SpecDoublePureNaN } - { SpecDoubleReal, SpecDoublePureNaN }\n\n    which yields\n\n        { SpecInt32Only }.\n\n    As a result, the compiler will think that that isNotIn32() check will always fail.  This\n    is not correct if the actual incoming value for that edge is actually a PureNaN.  In this\n    case, speculateRealNumber should have OSR exited, but it doesn't because it thinks that\n    the isNotInt32() check will always fail and elide the check altogether.\n\n    In this patch, we fix this by replacing the ~SpecFullDouble with ~SpecDoubleReal.  We also\n    rename the `intCase` block to `intOrNaNCase` to document what it actually handles.\n\n    * JSTests/stress/speculate-real-number-in-object-is.js: Added.\n    (test.object_is_opt):\n    (test):\n    * Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp:\n    (JSC::FTL::DFG::LowerDFGToB3::compileCompareStrictEq):\n\n    Canonical link: https://commits.webkit.org/252432.839@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/258113@main",
+          "tree": {
+            "sha": "33892466d636df718838f1aa80cf923f946a5742",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/33892466d636df718838f1aa80cf923f946a5742"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/98940f219ba0e3eb6d958af483b73dd9cc75c28c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/98940f219ba0e3eb6d958af483b73dd9cc75c28c",
+        "html_url": "https://github.com/WebKit/WebKit/commit/98940f219ba0e3eb6d958af483b73dd9cc75c28c",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/98940f219ba0e3eb6d958af483b73dd9cc75c28c/comments",
+        "author": null,
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "aff702358ff43fa9220b4e72da9bc3bab8c117b7",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/aff702358ff43fa9220b4e72da9bc3bab8c117b7",
+            "html_url": "https://github.com/WebKit/WebKit/commit/aff702358ff43fa9220b4e72da9bc3bab8c117b7"
+          }
+        ]
+      },
+      {
+        "sha": "88fe91451e9c053c1198d0a9f317d5e14350fc9b",
+        "node_id": "C_kwDOExyGPdoAKDg4ZmU5MTQ1MWU5YzA1M2MxMTk4ZDBhOWYzMTdkNWUxNDM1MGZjOWI",
+        "commit": {
+          "author": {
+            "name": "Chris Dumez",
+            "email": "cdumez@apple.com",
+            "date": "2022-12-20T00:17:19Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-20T00:17:19Z"
+          },
+          "message": "Cherry-pick 252432.766@safari-7614-branch (57372567b7b7). rdar://99729137\n\n    Do IPC hardening in WebPageProxy::didStartProvisionalLoadForFrameShared()\n    https://bugs.webkit.org/show_bug.cgi?id=247449\n    rdar://99729137\n\n    Reviewed by Geoffrey Garen.\n\n    Add message check for the unreachable URL as well, not just the URL.\n\n    * Source/WebKit/UIProcess/WebPageProxy.cpp:\n    (WebKit::WebPageProxy::didStartProvisionalLoadForFrameShared):\n\n    Canonical link: https://commits.webkit.org/252432.766@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/258103@main",
+          "tree": {
+            "sha": "de4178493f0fa690c53c562e2ded3b2c3901d63d",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/de4178493f0fa690c53c562e2ded3b2c3901d63d"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/88fe91451e9c053c1198d0a9f317d5e14350fc9b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/88fe91451e9c053c1198d0a9f317d5e14350fc9b",
+        "html_url": "https://github.com/WebKit/WebKit/commit/88fe91451e9c053c1198d0a9f317d5e14350fc9b",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/88fe91451e9c053c1198d0a9f317d5e14350fc9b/comments",
+        "author": {
+          "login": "cdumez",
+          "id": 995975,
+          "node_id": "MDQ6VXNlcjk5NTk3NQ==",
+          "avatar_url": "https://avatars.githubusercontent.com/u/995975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cdumez",
+          "html_url": "https://github.com/cdumez",
+          "followers_url": "https://api.github.com/users/cdumez/followers",
+          "following_url": "https://api.github.com/users/cdumez/following{/other_user}",
+          "gists_url": "https://api.github.com/users/cdumez/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/cdumez/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/cdumez/subscriptions",
+          "organizations_url": "https://api.github.com/users/cdumez/orgs",
+          "repos_url": "https://api.github.com/users/cdumez/repos",
+          "events_url": "https://api.github.com/users/cdumez/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/cdumez/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a5f4bb317a21ecac43636ca62237877d6627f83b",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/a5f4bb317a21ecac43636ca62237877d6627f83b",
+            "html_url": "https://github.com/WebKit/WebKit/commit/a5f4bb317a21ecac43636ca62237877d6627f83b"
+          }
+        ]
+      },
+      {
+        "sha": "7f45f505dc7e58f399b2303ec8080bc6f9c55753",
+        "node_id": "C_kwDOExyGPdoAKDdmNDVmNTA1ZGM3ZTU4ZjM5OWIyMzAzZWM4MDgwYmM2ZjljNTU3NTM",
+        "commit": {
+          "author": {
+            "name": "Jer Noble",
+            "email": "jer.noble@apple.com",
+            "date": "2022-12-19T21:33:50Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-19T21:33:50Z"
+          },
+          "message": "Cherry-pick 252432.749@safari-7614-branch (5281fc90d6f3). rdar://100515218\n\n    [Cocoa] Disable Audible codec in WebAudio\n    https://bugs.webkit.org/show_bug.cgi?id=247337\n    rdar://100515218\n\n    Reviewed by Darin Adler and John Wilander.\n\n    * Source/WebCore/platform/audio/cocoa/AudioFileReaderCocoa.cpp:\n    (WebCore::AudioFileReader::createBus):\n\n    Canonical link: https://commits.webkit.org/252432.749@safari-7614-branch\n\nCanonical link: https://commits.webkit.org/258090@main",
+          "tree": {
+            "sha": "a900523db3dd55db763615548b75fea47ac01302",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/a900523db3dd55db763615548b75fea47ac01302"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/7f45f505dc7e58f399b2303ec8080bc6f9c55753",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/7f45f505dc7e58f399b2303ec8080bc6f9c55753",
+        "html_url": "https://github.com/WebKit/WebKit/commit/7f45f505dc7e58f399b2303ec8080bc6f9c55753",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/7f45f505dc7e58f399b2303ec8080bc6f9c55753/comments",
+        "author": {
+          "login": "jernoble",
+          "id": 1557428,
+          "node_id": "MDQ6VXNlcjE1NTc0Mjg=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1557428?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jernoble",
+          "html_url": "https://github.com/jernoble",
+          "followers_url": "https://api.github.com/users/jernoble/followers",
+          "following_url": "https://api.github.com/users/jernoble/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jernoble/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jernoble/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jernoble/subscriptions",
+          "organizations_url": "https://api.github.com/users/jernoble/orgs",
+          "repos_url": "https://api.github.com/users/jernoble/repos",
+          "events_url": "https://api.github.com/users/jernoble/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jernoble/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7d8a35c36444a89da6244c8122e7bd12780ab3f6",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/7d8a35c36444a89da6244c8122e7bd12780ab3f6",
+            "html_url": "https://github.com/WebKit/WebKit/commit/7d8a35c36444a89da6244c8122e7bd12780ab3f6"
+          }
+        ]
+      },
+      {
+        "sha": "ff9bda75f3b0771fc39f8143dd5a73ce06898198",
+        "node_id": "C_kwDOExyGPdoAKGZmOWJkYTc1ZjNiMDc3MWZjMzlmODE0M2RkNWE3M2NlMDY4OTgxOTg",
+        "commit": {
+          "author": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-09T15:20:06Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-09T15:20:06Z"
+          },
+          "message": "[ews-build.webkit.org] Leaking sensitive commit titles (Follow-up fix)\nhttps://bugs.webkit.org/show_bug.cgi?id=248844\nrdar://103048097\n\nRubber-stamped by Aakash Jain.\n\nApply hiding to CheckOutSource as well.\n\n* Tools/CISupport/ews-build/steps.py:\n(CheckOutSource._dovccmd): Scrub remote command logs for sensative PRs.\n\nCanonical link: https://commits.webkit.org/257626@main",
+          "tree": {
+            "sha": "b168f15013cd77cc7bc971138baac1b7bce233a8",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/b168f15013cd77cc7bc971138baac1b7bce233a8"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/ff9bda75f3b0771fc39f8143dd5a73ce06898198",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/ff9bda75f3b0771fc39f8143dd5a73ce06898198",
+        "html_url": "https://github.com/WebKit/WebKit/commit/ff9bda75f3b0771fc39f8143dd5a73ce06898198",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/ff9bda75f3b0771fc39f8143dd5a73ce06898198/comments",
+        "author": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d78f7deeb03275d392b78f181508bcabd9974bdf",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/d78f7deeb03275d392b78f181508bcabd9974bdf",
+            "html_url": "https://github.com/WebKit/WebKit/commit/d78f7deeb03275d392b78f181508bcabd9974bdf"
+          }
+        ]
+      },
+      {
+        "sha": "bc01428c15f506ce754e97e4c9bae0b48876197a",
+        "node_id": "C_kwDOExyGPdoAKGJjMDE0MjhjMTVmNTA2Y2U3NTRlOTdlNGM5YmFlMGI0ODg3NjE5N2E",
+        "commit": {
+          "author": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-07T17:36:40Z"
+          },
+          "committer": {
+            "name": "Jonathan Bedard",
+            "email": "jbedard@apple.com",
+            "date": "2022-12-07T17:36:40Z"
+          },
+          "message": "[ews-build.webkit.org] Leaking sensitive commit titles\nhttps://bugs.webkit.org/show_bug.cgi?id=248844\nrdar://103048097\n\nReviewed by Ryan Haddad.\n\n* Tools/CISupport/ews-build/steps.py:\n(CheckOutSpecificRevision.buildCommandKwargs): Unset the stdioLogName for sensative build requests.\n(CheckOutPullRequest.makeRemoteShellCommand): Ditto.\n\nCanonical link: https://commits.webkit.org/257489@main",
+          "tree": {
+            "sha": "370aff2bb176502d5d6fc4c005797ce035322274",
+            "url": "https://api.github.com/repos/WebKit/WebKit/git/trees/370aff2bb176502d5d6fc4c005797ce035322274"
+          },
+          "url": "https://api.github.com/repos/WebKit/WebKit/git/commits/bc01428c15f506ce754e97e4c9bae0b48876197a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/WebKit/WebKit/commits/bc01428c15f506ce754e97e4c9bae0b48876197a",
+        "html_url": "https://github.com/WebKit/WebKit/commit/bc01428c15f506ce754e97e4c9bae0b48876197a",
+        "comments_url": "https://api.github.com/repos/WebKit/WebKit/commits/bc01428c15f506ce754e97e4c9bae0b48876197a/comments",
+        "author": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "JonWBedard",
+          "id": 6426975,
+          "node_id": "MDQ6VXNlcjY0MjY5NzU=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6426975?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JonWBedard",
+          "html_url": "https://github.com/JonWBedard",
+          "followers_url": "https://api.github.com/users/JonWBedard/followers",
+          "following_url": "https://api.github.com/users/JonWBedard/following{/other_user}",
+          "gists_url": "https://api.github.com/users/JonWBedard/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/JonWBedard/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/JonWBedard/subscriptions",
+          "organizations_url": "https://api.github.com/users/JonWBedard/orgs",
+          "repos_url": "https://api.github.com/users/JonWBedard/repos",
+          "events_url": "https://api.github.com/users/JonWBedard/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/JonWBedard/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "582ab7ce73b775c0d90b7541f4ec7125805bb46e",
+            "url": "https://api.github.com/repos/WebKit/WebKit/commits/582ab7ce73b775c0d90b7541f4ec7125805bb46e",
+            "html_url": "https://github.com/WebKit/WebKit/commit/582ab7ce73b775c0d90b7541f4ec7125805bb46e"
+          }
+        ]
+      }
+    ],
+    "unmarked_patches": [
+      "78446e08c925ecc9606b8dde8d40aa03a394a4ba",
+      "78591e2a71b937291571df69f5858512d7fc1c32",
+      "78446e08c925ecc9606b8dde8d40aa03a394a4ba",
+      "78591e2a71b937291571df69f5858512d7fc1c32",
+      "2064be239b76da5496de5b999cf881ac39909e7b",
+      "00a85695aaae7e907e69cfaa545a77b421f7fcb8",
+      "21283e484df49c5b40e2ac7e80bae4dc02be823a",
+      "7da147380e8caa516e06b2fdb018cbab20c3c493",
+      "02b20b56c9352285ab14399136288650ab463611",
+      "8b634f108da6e782a4fec68deb35974ccf855524",
+      "66729e8e064be7988cd7fe0dc9f0220292a415da",
+      "7fd0ca5ae2469833798027fddccc580d4f95189e",
+      "08e6685166730cf3efc984a8b89a66d259833072",
+      "b9f37668689e002701ad7b29ffbd4b57094c3bcf",
+      "003c3c24d1e36820a468f1e2ba86b80f493d05b1",
+      "773f04bc73ee862afb1cb79e8dbbf4e4aa54f8b6",
+      "8675dc347367b42c21c1f7db9f37cecce8de87d2",
+      "a587e9d2899acb3d24aa479555a5a84e6bbcc260",
+      "6fb1a9c6a04f29ec388cb0da16ae4a224d911fe5",
+      "3fc02c152c575bfdfab4f46e8808efc794d15cca",
+      "0917deac3ea87e90066b8ee76922295da7715c2a",
+      "9f2d5a99c44a8f0115439aff5f2469264117979d",
+      "020e4ca50944304fb1fb99315e8449f7b37f1a50",
+      "7d8ee943ec4d6a93b3e74f8dc0edd5044ebd5831",
+      "6ab74de7429060a6324a7b365c0d8c6bb0b232b1",
+      "78446e08c925ecc9606b8dde8d40aa03a394a4ba",
+      "78591e2a71b937291571df69f5858512d7fc1c32",
+      "2064be239b76da5496de5b999cf881ac39909e7b",
+      "00a85695aaae7e907e69cfaa545a77b421f7fcb8",
+      "21283e484df49c5b40e2ac7e80bae4dc02be823a",
+      "7da147380e8caa516e06b2fdb018cbab20c3c493",
+      "02b20b56c9352285ab14399136288650ab463611",
+      "8b634f108da6e782a4fec68deb35974ccf855524",
+      "66729e8e064be7988cd7fe0dc9f0220292a415da",
+      "7fd0ca5ae2469833798027fddccc580d4f95189e",
+      "08e6685166730cf3efc984a8b89a66d259833072",
+      "b9f37668689e002701ad7b29ffbd4b57094c3bcf",
+      "003c3c24d1e36820a468f1e2ba86b80f493d05b1",
+      "773f04bc73ee862afb1cb79e8dbbf4e4aa54f8b6",
+      "8675dc347367b42c21c1f7db9f37cecce8de87d2",
+      "a587e9d2899acb3d24aa479555a5a84e6bbcc260",
+      "6fb1a9c6a04f29ec388cb0da16ae4a224d911fe5",
+      "3fc02c152c575bfdfab4f46e8808efc794d15cca",
+      "0917deac3ea87e90066b8ee76922295da7715c2a",
+      "9f2d5a99c44a8f0115439aff5f2469264117979d",
+      "020e4ca50944304fb1fb99315e8449f7b37f1a50",
+      "7d8ee943ec4d6a93b3e74f8dc0edd5044ebd5831",
+      "6ab74de7429060a6324a7b365c0d8c6bb0b232b1",
+      "6ead17c095655aa5fd62f0afeeaceaeb8d75e0ec",
+      "6dd5690bed2cc05518d594287d6520a1847c1e96",
+      "006cef040540dbf946f959438814d11f35bf5b7b",
+      "87b1273fdeed59de71a963f29f1daa410a335a0d",
+      "ade6df27f4d3b088e21586732b48ae2f59e11707",
+      "78b9aa3f4d25142aa8dd6bed21c962a0c36184f1",
+      "1c8b29ff201022e3a20578244e85d25d1b7706c4",
+      "1fa5adc1417a27e7b4a71b2a5da1c0781f43c434",
+      "bc11d06cac4b0eb636c4aa77656f8dbb21686d6f",
+      "48aa7e7e7b5947169484269ef6056ec82c8c2551",
+      "6ac96e6cae91a4ed1041e2477e8e1da30d09c4fd",
+      "08fff43cb410ad70adc4901c02303eaa5a1002c2",
+      "2155ecbcf5c986a0defa5bb5e4a90fea7f216b73",
+      "d5cec71af8c238d45112e5c0c8ea563a08ffb6cb",
+      "624abd21431d15614bd591e6bc46af06bbcf8f87",
+      "114df9fa38ba20a58bd5ca229c63d8e99f8c595b",
+      "ab413821d8b5c092622953ae4a801cfe7082a57f",
+      "cf856cc22757ae6b0735049a513d1a404336899f",
+      "3fb602411bd97e628684e1fce773fac7bc66b873",
+      "ec41dfe771ab6260e5dc2cf538435be0972467af",
+      "5b1acc527ab5b10c9d9e4dd21fcec68e315790c2",
+      "8feec38ee01174c0f444b28535d6d3974aff7c7d",
+      "ddc1672329fbe8a912b081812acf1aa8c824e971",
+      "e1c35f7fdd555c8aad8335b909095445ab6e0bd1",
+      "0e24ad0de2a66991fc5e8be3703d277073b2f8e1",
+      "a005292b6c61d1a1877e16d6c9449cd91408283d",
+      "5964661836644230af0c5fe3ff10d7586c0ad6d1",
+      "696ec88e611e32610b7d24bab14e28fbe978e034",
+      "d10b68f098ca22e7d316858ead56794aaaa09600",
+      "2102afe293694e30842877265f29434c4e2f550b",
+      "2fa94f7a56e2206f3fce650aa10dfbaa169ae054",
+      "ef8d414db752ae27fd1bf5f796da6f8ab0d84e7d",
+      "11c44f032c1af8b3a6f30897bfcd789bdd4345a6",
+      "a046e5f190b50eebd31272a86b8efc40cbf5e988",
+      "56e1ac4fec3fbb5d905e5be048eaf4aadda28ebf",
+      "50b564eecd6056720b19eebe1293c752db1b1c4a",
+      "3ea031cd9d0468512be635f75f6e28b939bb494d",
+      "3aff3db35589f73b2af5668276c5cffbd50c9cdc",
+      "ca1a68b34126fa5f4afed5ce567c2cb383f3f5cb",
+      "4f63d0e4724d1eb508056cabc44f27072fd6ffdd",
+      "04f9830fef1247ba02e86ae05750d582d02ca3b2",
+      "dc88bcf5bbd7faa09c817a0e52df1b093f9be765",
+      "d8fadbe0e6af958e6df8f1730e3d0978388dfa70",
+      "209d622779998be455d8d5a15d4e93f3154e580c",
+      "609dbb726fceaaf552c60f8cc23219e78372c08f",
+      "e2d8ab5aaa1a8235e185c7e733c864ffa216e5bd",
+      "f68cfcc57ff92ba0d6be77471ae466bad36120da",
+      "03b0d03cceae2c081da42c1aa7969b9a89782956",
+      "221a548250e219261961676c35d2fe99706c021f",
+      "d030f866382e08d435256019406253718dc11a17",
+      "482b2f4161de044365b2314587b9256c57845fa3",
+      "fce56bdad8ca34a4e9faaf5b04ec97918a63c597",
+      "63d8efa2405295da9bd742234b62f504c9b21a08",
+      "544e416affdfe60caf986985eee1481a0880d0a3",
+      "a3c4cf83fb2630f50af6aae5a6e5e67c54e6bf69",
+      "93e78bed20d3690720f3bfc0fd00ce6c305b6655",
+      "91e9772155e7dc877cd28d7d9734b3631d99dea9",
+      "74139ded7062c9c704c954fb7c8d3331d1178af2",
+      "2beb12eaddf3be68828df94c475c23402d67ca64",
+      "d403b6935537f285f004927aefce800cfd850fea",
+      "f00ce4604151fc37e6a6e7e2af963a7cb3bc7c9d",
+      "3c64c35aacaaf23d571c4c05983caa8d26f4b93e",
+      "bf51ac10e9b18cbbad0c999e27f2c66511f51925",
+      "285ff73b5f6d46d6e502aca30061667e41a3114b",
+      "d3ed34713b89bfd45c0878254b6a7145548cb7ab",
+      "9f0ce65d7aae0d0c2b8534fd408c75f88b98a8bf"
+    ],
+    "gaps": []
+  }
+}

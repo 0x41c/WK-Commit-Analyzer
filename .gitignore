@@ -1,0 +1,8 @@
+.env
+yarn.lock
+node_modules
+
+# Yes, I give the cache on purpose so people don't have to run this individually.
+# I don't feel like being responsible for a DDOS on bugs.webkit.org smh
+
+# cache
